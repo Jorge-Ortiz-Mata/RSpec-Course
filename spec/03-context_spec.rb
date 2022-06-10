@@ -2,7 +2,7 @@ RSpec.describe '#even? method' do
 
     context 'with even number' do
         it 'should return true' do
-            expect(subject.even?).to eq(true)
+            expect(4.even?).to eq(true)
         end 
     end 
 

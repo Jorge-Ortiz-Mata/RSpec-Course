@@ -12,6 +12,7 @@ end
 
 =begin
 
-    The ".not_to" method is the reverse of the ".to" method
+    The ".not_to" method is the reverse of the ".to" method. This method compares 
+    if the two values are not equal to each other.
 
 =end

@@ -9,6 +9,7 @@ RSpec.describe 'Equality matchers' do
             expect(a).to eq(b)
         end
     end
+
     describe 'eql matcher' do
         it 'test for data types' do
             expect(a).not_to eql(3)
@@ -16,8 +17,23 @@ RSpec.describe 'Equality matchers' do
             expect(a).not_to eql(b)
         end
     end
-end
 
+    describe 'equal and be matcher' do
+        let(:c) { [1, 2, 3] }
+        let(:d) { [1, 2, 3] }
+        let(:e) { c }
+
+        it 'cares about object identity' do
+            expect(c).to eq(d)
+            expect(c).to eql(d)
+            expect(c).to equal(e)
+            expect(c).not_to equal(d)
+            expect(c).to be(e)
+            expect(c).not_to be(d)
+            expect(c).not_to be([1, 2, 3])
+        end
+    end
+end
 
 =begin
 

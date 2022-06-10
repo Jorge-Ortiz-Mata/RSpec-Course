@@ -39,5 +39,7 @@ end
 
     * The eq matcher only compares that both have the same value.
     * The eql matcher compares if both have the same value and have the same class.
+    * The equal method compares if both variables are the same OBJECT, neither value nor type.
+    * The be method is an alias of equal.
 
 =end

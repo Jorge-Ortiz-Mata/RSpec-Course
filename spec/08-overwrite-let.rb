@@ -22,3 +22,10 @@ RSpec.describe ProgrammingLanguage do
         end
     end
 end
+
+=begin
+
+    This practice consists on set a default value to the Programming Language
+    whether the user didn't assign a vale. 
+
+=end

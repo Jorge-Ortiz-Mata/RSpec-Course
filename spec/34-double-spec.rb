@@ -27,3 +27,5 @@ RSpec.describe 'Double method' do
         expect(stuntman.light_on_fire).to eq(true)
     end
 end
+
+

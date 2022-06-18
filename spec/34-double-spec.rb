@@ -7,12 +7,16 @@ RSpec.describe 'Double method' do
         expect(stuntman.light_on_fire).to be true
     end
 
+
+
     it 'alternative sintax' do
         stuntman = double("Mr. Danger")
 
         allow(stuntman).to receive(:fall_off_lader).and_return("Ouch")
         expect(stuntman.fall_off_lader).to eq("Ouch")
     end
+
+    
 
     it 'another alternative sintax' do
         stuntman = double("Mr. Danger")
